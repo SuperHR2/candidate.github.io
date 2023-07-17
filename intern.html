@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="acount.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                        <div class="col-md-3">
+                          <a class="navbar-brand" href="#">
+                            <img src="C:\Users\malli\Documents\internship\img\unnamed.png" alt="" height="40px" width= "272.85711669921875px" class="d-inline-block align-text-top">
+                          </a>
+                        </div>
+                </div>
+          <div class="d-flex align-items-center">
+            <a  href="#" class="text-decoration-none text-reset me-2">username  
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40"/>
+            </a>
+            <div class="dropdown">
+              <a
+              class="text-reset me-1 dropdown hidden-arrow"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <i class=" fs-4 bi bi-bell bi-lg text-dark"></i>
+              
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+              <a
+                class="text-reset me-2 dropdown hidden-arrow"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fs-4 bi bi-three-dots-vertical bi-lg text-dark"></i>
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-user-alt pe-2"></i>My Profile</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-cog pe-2"></i>Settings</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-door-open pe-2"></i>Logout</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <button type="button" class="btn-close me-5 mb-4" aria-label="Close" 
+    onclick="window.location.href = 'apply.html';" style="float: right; padding-top: 50px;"></button>
+
+    <form id="signUpForm" action="redirectaccount.html">
+    <!--start step indicators-->
+        <h2 class="mb-4" >Intern application</h2>
+        <div class="form-header d-flex mb-4">
+        <span class="stepIndicator">Personal information</span>
+        <span class="stepIndicator">Contact information</span>
+        <span class="stepIndicator">Education information</span>
+        <span class="stepIndicator">Document upload</span>
+        </div>
+
+        <div class="step">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-xl-9">
+                    <div class="row align-items-center pt-4 pb-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="position1" class="col-form-label">Position 1</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <select name="position1" id="position1" class="form-select">
+                                <option value="">Position name</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="ux/ui">UX/UI Designer</option>
+                                <option value="hr">HR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="position2" class="col-form-label">Position 2</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <select name="position1" id="position1" class="form-select">
+                                <option value="">Position name</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="ux/ui">UX/UI Designer</option>
+                                <option value="hr">HR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="from" class="col-form-label">From</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="date" name="from" id="from" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="to" class="col-form-label">To</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="date" name="to" id="to" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="reason" class="col-form-label">Reason</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="text" name="reason" id="reason" class="form-control" placeholder="application reason">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--contact-->
+        <div class="step">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-xl-12">
+                    <div class="row align-items-center pt-4 pb-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="position1" class="col-form-label">House registration address</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="text" name="house" id="house" class="form-control" placeholder="House registration address">
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-2">
+                      <div class="col-auto col-md-3 ps-5">
+                          
+                        </div>
+                        <div class="col-auto col-md-8 pe-5 ">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                              <label class="form-check-label" for="inlineCheckbox1">Same as registration house</label>
+                            </div>
+                        </div>
+                  </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="current"  class="col-form-label">Current address</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="text" name="current" id="current" class="form-control" placeholder="Current address">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="contact" class="col-form-label">Contact person</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="text" name="contact" id="current" class="form-control" placeholder="Contact person">
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="phone" class="col-form-label">Phone number</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Contact person phone number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--education-->
+        <div class="step">
+            <div class="row align-items-center py-3">
+                <div class="col-auto col-md-3 ps-5">
+                    <label for="inputPassword6" class="col-form-label">Education Level</label>
+                  </div>
+                <div class="col-auto col-md-8 pe-5">
+                    <select name="" class="form-select">Education Level
+                    <option value="bachelor">Bachelor Degrees</option>
+                    <option value="master">Master Degrees</option>
+                    <option value="doctor">Doctoral Degrees</option>
+                </select>
+                </div>
+            </div>
+            <div class="row align-items-center py-3">
+              <div class="col-auto col-md-3 ps-5">
+                  <label for="inputuni" class="col-form-label">University</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <select class="form-select" data-live-search="true" title="Please select">
+                    <option value="cu">Chulalongkorn University</option>
+                    <option value="mu">Mahidol University</option>
+                    <option value="ku">Kasetsart University</option>
+                    <option value="kku">Khon Kaen University</option>
+                    <option value="psu">Prince of Songkla University</option>
+                    <option value="kmut">King Mongkut's University of Technology Thonburi</option>
+                    <option value="tu">Thammasat University</option>
+                    <option value="kmutn">King Mongkut's University of Technology North Bangkok</option>
+                    <option value="nu">Naresuan University</option>
+                    <option value="kmitl">King Mongkut's Institute of Technology Ladkrabang</option>
+                    <option value="sut">Suranaree University of Technology</option>
+                    <option value="bu">Burapha University</option>
+                    <option value="ssru">Suan Sunandha Rajabhat University</option>
+                    <option value="wu">Walailak University</option>
+                    <option value="su">Srinakharinwirot University</option>
+                    <option value="uru">Ubon Ratchathani University</option>
+                    <option value="pu">University of Phayao</option>
+                    <option value="mflu">Mae Fah Luang University</option>
+                    <option value="mu">Maejo University</option>
+                    <option value="spu">Silpakorn University</option>
+                    <option value="ru">Rangsit University</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+          </div>
+          <div class="row align-items-center py-3">
+            <div class="col-auto col-md-3 ps-5">
+                <label for="current" class="col-form-label">University</label>
+            </div>
+            <div class="col-auto col-md-8 pe-5">
+                <input type="text" name="university" id="university" class="form-control" placeholder="University name">
+            </div>
+          </div>
+          <div class="row align-items-center py-3">
+            <div class="col-auto col-md-3 ps-5">
+                <label for="current" class="col-form-label">Faculty</label>
+            </div>
+            <div class="col-auto col-md-8 pe-5">
+                <input type="text" name="faculty" id="faculty" class="form-control" placeholder="Faculty">
+            </div>
+          </div>
+            <div class="row align-items-center py-3">
+                <div class="col-auto col-md-3 ps-5">
+                    <label for="inputmaj" class="col-form-label">Major</label>
+                  </div>
+                  <div class="col-auto col-md-8 pe-5">
+                    <input type="text" name="major" class="form-control"  placeholder="Major name" >
+                  </div>
+            </div>
+            <div class="row align-items-center py-3">
+                <div class="col-auto col-md-3 ps-5">
+                    <label for="inputPassword6" class="col-form-label">Year</label>
+                  </div>
+                <div class="col-auto col-md-8 pe-5">
+                    <select name="" class="form-select">Year
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+                </div>
+            </div>
+            <div class="row align-items-center py-3">
+                <div class="col-auto col-md-3 ps-5">
+                    <label for="inputgpa" class="col-form-label">GPA</label>
+                  </div>
+                  <div class="col-auto col-md-8 pe-5">
+                    <input type="text" name="gpa" class="form-control"  placeholder="GPA" >
+                  </div>
+            </div>
+        </div>
+        <!--step4 file-->
+        <div class="step">
+            <div class="file-upload justify-content-center">
+              <div class="row align-items-center  justify-content-between">
+                <div class="col-auto col-md-4">
+                    <label for="file-input mb-3">Transcript</label>
+                  </div>
+                  <div class="col-auto col-md-6">
+                    <input id="file-input" type="file"/>
+                  </div>
+            </div>
+            <div class=" row align-items-center  justify-content-between">
+                <div class="col-auto col-md-4">
+                    <label for="file-input mb-3">Resume</label>
+                  </div>
+                  <div class="col-auto col-md-6">
+                    <input id="file-input" type="file"/>
+                  </div>
+            </div>
+            <div class=" row align-items-center  justify-content-between">
+              <div class="col-auto col-md-4">
+                  <label for="file-input mb-3">Cover letter</label>
+                </div>
+                <div class="col-auto col-md-6">
+                  <input id="file-input" type="file"/>
+                </div>
+          </div>
+
+          <div class="row align-items-center  justify-content-between">
+            <div class="col-auto col-md-4">
+                <label for="file-input mb-3">House registration</label>
+              </div>
+              <div class="col-auto col-md-6">
+                <input id="file-input" type="file"/>
+              </div>
+        </div>
+
+        <div class="row align-items-center  justify-content-between">
+          <div class="col-auto col-md-4">
+              <label for="file-input mb-3">ID card</label>
+            </div>
+            <div class="col-auto col-md-6">
+              <input id="file-input" type="file"/>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto col-md-4 ">
+              <label for="file-input mb-5">Photo</label>
+            </div>
+            <div class="col-auto col-md-6">
+              <input id="file-input" type="file"/>
+            </div>
+        </div>
+        <div class=" row align-items-center  justify-content-between">
+            <div class="col-auto col-md-4">
+                <label for="file-input mb-3">Cartificate(optional)</label>
+              </div>
+              <div class="col-auto col-md-6">
+                <input id="file-input" type="file"/>
+              </div>
+        </div>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto col-md-4 ">
+              <label for="file-input mb-5">Other (optional)</label>
+            </div>
+            <div class="col-auto col-md-6">
+              <input id="file-input" type="file"/>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- start previous / next buttons -->
+        <div class="form-footer d-flex justify-content-end ">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </form>
+
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+            showTab(currentTab); // Display the current tab
+             
+            function showTab(n) { 
+              // This function will display the specified tab of the form...
+              var x = document.getElementsByClassName("step");
+              x[n].style.display = "block";
+              //... and fix the Previous/Next buttons:
+              if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+              } else {
+                document.getElementById("prevBtn").style.display = "inline";
+              }
+              if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "Submit";
+              } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+              }
+              //... and run a function that will display the correct step indicator:
+              fixStepIndicator(n)
+            }
+            
+            function nextPrev(n) {
+              // This function will figure out which tab to display
+              var x = document.getElementsByClassName("step");
+              // Exit the function if any field in the current tab is invalid:
+              if (n == 1 && !validateForm()) return false;
+              // Hide the current tab:
+              x[currentTab].style.display = "none";
+              // Increase or decrease the current tab by 1:
+              currentTab = currentTab + n;
+              // if you have reached the end of the form...
+              if (currentTab >= x.length) {
+                // ... the form gets submitted:
+                document.getElementById("signUpForm").submit();
+                return false;
+              }
+              // Otherwise, display the correct tab:
+              showTab(currentTab);
+            }
+            
+            function validateForm() {
+              // This function deals with validation of the form fields
+              var x, y, i, valid = true;
+              x = document.getElementsByClassName("step");
+              y = x[currentTab].getElementsByTagName("input");
+              // A loop that checks every input field in the current tab:
+              for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                  // add an "invalid" class to the field:
+                  y[i].className += " invalid";
+                  // and set the current valid status to false
+                  valid = false;
+                }
+              }
+              // If the valid status is true, mark the step as finished and valid:
+              if (valid) {
+                document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
+              }
+              return valid; // return the valid status
+            }
+            
+            function fixStepIndicator(n) {
+              // This function removes the "active" class of all steps...
+              var i, x = document.getElementsByClassName("stepIndicator");
+              for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+              }
+              //... and adds the "active" class on the current step:
+              x[n].className += " active";
+            }</script>
+</body>
+</html>

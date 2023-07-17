@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="position.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                        <div class="col-md-4">
+                          <a class="navbar-brand" href="#">
+                            <img src="C:\Users\malli\Documents\internship\img\unnamed.png" alt="" height="40px" width= "272.85711669921875px" class="d-inline-block align-text-top">
+                          </a>
+                        </div>
+                </div>
+          <div class="d-flex align-items-center">
+            <a  href="followup.html" class="text-decoration-none text-reset me-2">username  
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40"/>
+            </a>
+            <div class="dropdown">
+              <a
+              class="text-reset me-1 dropdown hidden-arrow"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <i class=" fs-4 bi bi-bell bi-lg text-dark"></i>
+              
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+              <a
+                class="text-reset me-2 dropdown hidden-arrow"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fs-4 bi bi-three-dots-vertical bi-lg text-dark"></i>
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-user-alt pe-2"></i>My Profile</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-cog pe-2"></i>Settings</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-door-open pe-2"></i>Logout</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+      
+    <div class="container-fluid" id="main">
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <h4 class="text-center mb-5" style="font-weight: 500; color: #484554;">Your Application</h4>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="icon">
+                            <a href="#content"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                                <path d="M1 15L7 8L1 1" stroke="#484554" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                        </div>
+                        <div class="card-text">
+                        <h5>Job application</h5>
+                        <p class="text-muted mb-0">22/03/2023</p>
+                        
+                        </div>
+                        <p class="text-end" style="color: #484554;">Test</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="icon">
+                            <a href="#content"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                                <path d="M1 15L7 8L1 1" stroke="#484554" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                        </div>
+                        <div class="card-text">
+                        <h5>Intern application</h5>
+                        <p class="text-muted mb-0">22/03/2023</p>
+                        
+                        </div>
+                        <p class="text-end" style="color: #484554;">New apply</p>
+                    </div>
+                </div>
+
+                <div class="text-end" style=" width: 360px;">
+                    <button type="button" class="btn btn-primary mb-5 "data-bs-toggle="modal" data-bs-target="#apply" 
+                style="background-color: #fff; color: #444DDA; border: 1px solid #444DDA; border-radius: 5px; ">
+                Add new application</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="apply" tabindex="-1" aria-labelledby="cancel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                        <button type="button" class="btn btn-primary mb-3" onclick="window.location.href = 'intern.html';"
+                        style="background-color: #fff; color: #444DDA; border: 1px solid #444DDA; border-radius: 5px;">Apply for internship</button><br>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href = 'job.html';"
+                        style="background-color: #fff; color: #444DDA; border: 1px solid #444DDA; border-radius: 5px;">Apply for job</button>
+                        </div>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-md-8" id="content">
+                <div class="header ">
+                    <div class="row justify-content-end">
+                        <div class="col-sm-5">
+                            <div class="row mb-3">
+                              <div class="col-sm-5">
+                                <p class="text-muted mb-0">Process Status</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p class=" mb-2" style="color: #444DDA; padding-right: 30px; ">Test</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                style="background-color: #444DDA; border: 1px solid #444DDA;">Test</button>
+                              </div>
+                            </div>
+                  
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="exampleModalLabel">Skilltest</h4>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="mb-3">
+                                          <p>1. Design the dashboard of applicants tracking un the sense of appliing, rejected, accepted, interviewed.</p>
+                                          </div>
+                                          
+                                          <hr>
+                                          <div class="mb-3">
+                                            <h5>Your work</h5>
+                                            </div>
+                                            <div class="row row align-items-center  justify-content-between">
+                                              <div class="col-auto col-md-4">
+                                                  <label for="file-input mb-3"> Attachments</label>
+                                                </div>
+                                                <div class="col-auto col-md-6">
+                                                  <input id="file-input" type="file"/>
+                                                </div>
+                                          </div>
+                                        <div class="mb-3">
+                                          <label for="message-text" class="col-form-label">Link:</label>
+                                          <input type="url" class="form-control" id="message-text " placeholder="Enetr link here">
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success" data-bs-whatever="@mdo"
+                                      style="background-color: #444DDA; border: 1px solid #444DDA;">Hand in</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                  
+                              <!-- Modal -->
+                              <div class="modal fade" id="success" tabindex="-1" aria-labelledby="successlabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Hand in your skill test?</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p class="text-m">1 attachment will be summitted</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn" data-bs-dismiss="modal" style="color: #444DDA;">Cancel</button>
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success" data-bs-whatever="@mdo" 
+                                      style="background-color: #444DDA; border: 1px solid #444DDA;">Hand in</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                
+
+
+                <div class="data-body">
+                    <h4 class="mb-4" style="color: #484554;">Application information</h4>
+                <div class="row " >
+                    <div class="col-md-12">
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Position 1</p>
+                            <p class=" mb-0">UX/UI desi trainee</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Document</p>
+                            <p class=" mb-0">Male</p>
+                            </div>
+                        </div>
+                
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                                <p class="text-muted mb-0">Position 2</p>
+                                <p class=" mb-0">Programmer trainee</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">University</p>
+                            <p class=" mb-0">xxxx University</p>
+                        </div>
+                        </div>
+                
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Period</p>
+                            <p class=" mb-0">xx/xx/xxxx xx/xx/xxxx</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Faculty</p>
+                            <p class="mb-0">xxxx</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Period</p>
+                            <p class=" mb-0">xx/xx/xxxx xx/xx/xxxx</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Faculty</p>
+                            <p class="mb-0">xxxx</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">House registration address</p>
+                            <p class=" mb-0">xxxxxxxxxxxxx</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Major</p>
+                            <p class="mb-0">xxxx</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Current address</p>
+                            <p class=" mb-0">Sama as registration house</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Year</p>
+                            <p class="mb-0">3rd</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                                <p class="text-muted mb-0">Contact person </p>
+                                <p class=" mb-0">Contact personal name</p>
+                                </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">GPA</p>
+                            <p class="mb-0">x.xx</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Contact person Phone number</p>
+                            <p class=" mb-0">xxx-xxx-xxxx</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Application reason</p>
+                            <p class="mb-0">application reason</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Test result</p>
+                            <p class=" mb-0">-</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Interview data</p>
+                            <p class="mb-0">-</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-5">
+                            <p class="text-muted mb-0">Result</p>
+                            <p class=" mb-0">-</p>
+                            </div>
+                            <div class="col-sm-6">
+                            <p class="text-muted mb-0">Interview result</p>
+                            <p class="mb-0">-</p>
+                            </div>
+                        </div>
+                    </div><!--md8-->
+                </div><!--row-->
+              </div> 
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-primary mb-5 me-5 " data-bs-toggle="modal" data-bs-target="#cancel" 
+                  style="color: #444DDA; border: 1px solid #444DDA;">
+                    Cancel application
+                  </button>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="cancel" tabindex="-1" aria-labelledby="cancel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <i class="fs-1 bi bi-exclamation-circle-fill" style="color: #CB0021;"></i>
+                            <h4 class="">Cancel the application</h4>
+                        </div>
+                          <form>
+                            <div class="mb-3 ">
+                              <label for="message" class="col-form-label">Cancelation reason</label>
+                              <Select class="form-control">
+                                <option value="">Reason</option>
+                              </Select>
+                            </div>
+                            <div class="mb-3">
+                              <label for="message" class="col-form-label">Detail (if select others)</label>
+                              <input type="text" name="detail" id="detail" class="form-control">
+                            </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-primary" onclick="window.location.href = 'apply.html';"
+                        style="border-radius: 5px; background: #CB0021; border:1px solid #CB0021;">Comfirm Cancelation</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>  
+        </div><!--row-->
+        
+    </div><!--container-->
+
+      
+
+      
+</body>
+</html>
